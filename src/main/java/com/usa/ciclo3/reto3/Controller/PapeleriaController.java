@@ -32,7 +32,7 @@ public class PapeleriaController {
         return papeleriaService.obtenerPapeleriaCompleta();
     }
     @GetMapping("/{id}")
-    public Optional<Papeleria> obtenerPapeleriaId(@PathVariable("id)") Integer identificador){
+    public Optional<Papeleria> obtenerPapeleriaId(@PathVariable("id") Integer identificador){
         return papeleriaService.obtenerPapeleriaId(identificador);
     }
 
